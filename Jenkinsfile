@@ -43,10 +43,10 @@ node {
     }
 
     // Uncomment the following block to add Sonar analysis.
-    /*stage('quality analysis') {
+    stage('quality analysis') {
         withSonarQubeEnv('Sonar Server') {
             sh "./gradlew sonarqube"
         }
-    }*/
+    }
 
 }
